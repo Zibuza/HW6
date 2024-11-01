@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import image from "../images/divider.png";
-import dice from "../images/shape.png";
-import mobileDivider from "../images/mobileDivaider.png";
+
 import axios from "axios";
 import "../adviceCard/adviceCard.css";
 
@@ -34,12 +32,12 @@ export default function AdviceCard() {
         <>
           <p>ADVICE #{advice.id}</p>
           <h2>{advice.advice}</h2>
-          <img className='divider' src={image} alt="Divider" />
-          <img className='mobile-divider' src={mobileDivider} alt="Mobile Divider" />
+          <img className='divider' src={"/images/divider.png"} alt="Divider" />
+          <img className='mobile-divider' src={"/images/mobileDivaider.png"} alt="Mobile Divider" />
         </>
       )}
       <div className="dice" onClick={getAdvice}>
-        <img src={dice} alt="Dice" />
+        <img src={"/images/Shape.png"} alt="Dice" />
       </div>
     </div>
   );
